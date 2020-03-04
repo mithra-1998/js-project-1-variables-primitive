@@ -4,6 +4,8 @@
  * values - null(oject type), undefined, NaN
  */
 
+// String Methods
+
 let str1 = 'Hello'
 let str2 = ' World'
 //returns the concatnated string
@@ -81,3 +83,125 @@ console.log(str.toUpperCase())
 //output : Hello World
 let str3 = '      Hello     World     '
 console.log(str3.trim())
+
+//------------------------------------------------------------------
+
+//Number Methods
+
+
+
+let num = 2354.7364
+//Convert a number into a string, keeping only three decimals
+//output : 2354.736
+console.log(num.toFixed(3))
+//output : 2355
+console.log(num.toFixed())
+//output : 2354.7364000000
+console.log(num.toFixed(10))
+
+//Convert a number into an exponential notation
+//output : 2.3547364e+3
+console.log(num.toExponential(3))
+
+//Convert a number to a substring
+//output : 2354.7364 (base 10)
+console.log(num.toString())
+//output : 100100110010.101111001000010010110101110111001100011 (base 2)
+console.log(num.toString(2))
+//output : 4462.5710226567143 (base octal)
+console.log(num.toString(8))
+//output : 932.bc84b5dcc6 (base hexadecimal)
+console.log(num.toString(16))
+
+//------------------------------------------------------------------
+
+//Global Methods:
+
+//info, warn.error, log, table
+
+//Console -> info
+//output : Hello world!
+console.info("Hello world!");
+
+//Console -> warn.error
+//output : This is a warning!
+console.warn("This is a warning!");
+
+//Console -> error
+//Output : You made a mistake
+console.error("You made a mistake");
+
+//Console -> log
+//Output : Hello world!
+console.log("Hello world!");
+
+//Console -> table
+//Output : 
+console.table(["Audi", "Volvo", "Ford"]);
+
+//Display an alert box
+//alert("Hello! I am an alert box!!");
+
+//Display a prompt box which ask the user for her/his name, and output a message
+//let store_val = prompt("Please enter your name", "Mithra Ramkumar");
+//console.log(store_val)
+
+//Display a confirmation box
+//Output : 
+//confirm("Press a button!");
+
+//Number 
+//Convert different object values to their numbers
+//output : 1
+//999
+//null
+let x1 = true;
+let x4 = "999";
+let x5 = "78 78"
+console.log(Number(x1))
+console.log(Number(x4))
+console.log(Number(x5))
+
+
+//Check whether a value is NaN
+//Output : false
+//true
+//true
+//false
+console.log(isNaN(123))
+console.log(isNaN('Hello'))
+console.log(isNaN('2005/12/12'))
+console.log(isNaN(true)) 
+
+//Parse different strings to Float
+//Output : 10
+//10.33
+//34
+//60
+//40
+console.log(parseFloat("10.00"))
+console.log(parseFloat("10.33"))
+console.log(parseFloat("34 45 66"))
+console.log(parseFloat("   60   "))
+console.log(parseFloat("40 years"))
+
+//The parseInt() function parses a string and returns an integer.
+//Output : null
+//10
+//8
+//4096
+//16
+console.log(parseInt("10", 12345))
+console.log(parseInt("010")) 
+console.log(parseInt("10", 8)) 
+console.log(parseInt("0x1000"))
+console.log(parseInt("10", 16))
+
+
+//convert different objects to strings
+//Output : false
+console.log(String(Boolean(0)))
+
+//function to find out if an expression (or a variable) is true
+//Output : false
+console.log(Boolean(9 > 10))
