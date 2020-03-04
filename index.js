@@ -117,7 +117,7 @@ console.log(num.toString(16))
 
 //Global Methods:
 
-//info, warn.error, log, table
+
 
 //Console -> info
 //output : Hello world!
@@ -139,28 +139,30 @@ console.log("Hello world!");
 //Output : 
 console.table(["Audi", "Volvo", "Ford"]);
 
-//Display an alert box
-//alert("Hello! I am an alert box!!");
+///Display an alert box
+alert("Hello! I am an alert box!!");
 
 //Display a prompt box which ask the user for her/his name, and output a message
-//let store_val = prompt("Please enter your name", "Mithra Ramkumar");
-//console.log(store_val)
+let store_val = prompt("Please enter your name", "Mithra Ramkumar");
+console.log(store_val)
 
 //Display a confirmation box
 //Output : 
-//confirm("Press a button!");
+confirm("Press a button!");
 
 //Number 
 //Convert different object values to their numbers
 //output : 1
 //999
-//null
+//NaN
+//NaN
 let x1 = true;
 let x4 = "999";
 let x5 = "78 78"
 console.log(Number(x1))
 console.log(Number(x4))
 console.log(Number(x5))
+console.log(Number('f'))
 
 
 //Check whether a value is NaN
@@ -186,7 +188,7 @@ console.log(parseFloat("   60   "))
 console.log(parseFloat("40 years"))
 
 //The parseInt() function parses a string and returns an integer.
-//Output : null
+//Output : NaN
 //10
 //8
 //4096
